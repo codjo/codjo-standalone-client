@@ -1,0 +1,86 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--
+     | POM Relationships
+     -->
+
+    <parent>
+        <groupId>net.codjo.pom</groupId>
+        <artifactId>codjo-pom-library</artifactId>
+        <version>SNAPSHOT</version>
+    </parent>
+    <groupId>net.codjo.standalone-client</groupId>
+    <artifactId>codjo-standalone-client</artifactId>
+    <version>1.15-SNAPSHOT</version>
+    <dependencies>
+        <dependency>
+            <groupId>com.jgoodies</groupId>
+            <artifactId>looks</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>net.codjo.standalone-common</groupId>
+            <artifactId>codjo-standalone-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>net.codjo.security</groupId>
+            <artifactId>codjo-security-gui</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>net.codjo.security</groupId>
+            <artifactId>codjo-security-server</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>net.codjo.security</groupId>
+            <artifactId>codjo-security-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>net.codjo.sql</groupId>
+            <artifactId>codjo-sql-server</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>net.codjo.crypto</groupId>
+            <artifactId>codjo-crypto-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>net.codjo.crypto</groupId>
+            <artifactId>codjo-crypto-gui</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>net.codjo.sql</groupId>
+            <artifactId>codjo-sql-server</artifactId>
+        </dependency>
+        <!-- External -->
+        <dependency>
+            <groupId>net.codjo.test</groupId>
+            <artifactId>codjo-test-common</artifactId>
+        </dependency>
+        <!--Tests-->
+        <dependency>
+            <groupId>net.codjo.security</groupId>
+            <artifactId>codjo-security-common</artifactId>
+            <classifier>tests</classifier>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <!--
+    | Project Information
+    -->
+
+    <name>Lib &gt; standalone-client</name>
+    <description>Librairie definissant le socle Plugin pour les applications client/serveur</description>
+    <inceptionYear>2007</inceptionYear>
+
+    <!--
+    | Environment Information
+    -->
+
+    <scm>
+        <connection>scm:git:https://github.com/codjo/codjo-standalone-client.git</connection>
+        <developerConnection>scm:git:https://github.com/codjo/codjo-standalone-client.git</developerConnection>
+        <url>https://github.com/codjo/codjo-standalone-client</url>
+    </scm>
+
+</project>
